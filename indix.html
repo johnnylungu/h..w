@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Model WINDOW: pseudo + position</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <!--Hm1:
+         <main> Ca rol este folosit pentru a delimita partea principala a unei pagini,
+         Continutul din <main> nu ar trebui repetat in pagina,
+    ar trebui sa fie legat direct de subiectul continutului,
+    
+        
+    
+    -->
+    <main id="content">
+
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, neque.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dicta recusandae ut rerum animi eum, nihil nemo rem minima. At pariatur eos impedit suscipit, consequuntur dolor fugit exercitationem vero sed ad officiis est veniam sint odit et quaerat velit eaque alias voluptatum iusto deleniti dolorem facilis nostrum! At, id veniam?</p>
+<p>Tenetur nihil rerum eveniet ipsum minima dolore nam asperiores optio reprehenderit. Quisquam iste consequuntur repudiandae velit ut nisi ipsam ratione. Distinctio, minima accusamus vero cupiditate fugiat molestias nostrum debitis architecto quidem labore doloribus quibusdam, quod maxime reiciendis magni inventore, odit eius? Dolorem reprehenderit, voluptatem culpa ipsum consequatur rerum quam facilis!</p>
+<p>Adipisci aut asperiores fugiat quasi suscipit commodi provident eaque praesentium aspernatur non numquam velit laudantium ut corporis, impedit possimus, sed molestiae corrupti quisquam neque? Quidem quisquam adipisci tenetur asperiores delectus neque amet ex distinctio cupiditate esse dicta maxime nulla facilis laboriosam obcaecati temporibus natus corporis placeat odit, nemo quis tempora?</p>
+
+<p class="ad">
+    The benefit from it HIT<a href="#modal">This button</a>
+</p>
+    </main>
+
+
+
+    <div id="modal">
+        <!--Hw2 Da, se poate de folosit h1 doar ca trebuie de
+            folosit tagul pentru tipul de continut, in cazul nostru
+            <article> sau <section> in loc de <div>  cu titlul h1 care este 
+            recunoscut ca niste repere cheie de catre algoritmul schitei documentului,
+            ex: <article> cu h1 titlu propriu - titlul saitului nu mai este
+                interpretat  reprezentativ pentru continutul acestui articol..
+                Dar regula veche spune 1 h1 titlu, cuvint cheie pentru motorul de cautare.
+                Asa mi-o spus google..
+
+
+
+        -->
+        <h1>Apply for this product</h1>
+        <h2>In order to apply fill in the blank</h2>
+
+        <form>
+
+
+
+            <label for="fname">First Last name:</label>
+            <input type="text" id="fname" name="fname" required value="Johny pack" ><br>
+            <label for="phone">phone:</label>
+
+
+
+
+            <label for="prefix"></label>
+            <select class="fix" name="prefix" id="prefix">
+        <option value="+34">[+34]</option>
+        <option value="+39">[+39]</option>
+        <option value="+40">[+40]</option> 
+        <option value="+44">[+44]</option>
+        <option value="+70">[+70]</option>
+        <option value="+373">[+373]</option>
+        </select>
+            
+            <input  type="text" id="phone" name ="phone"  value="12345667899" required ><br>
+           
+    
+
+
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email" value="johnypack@.com" required ><br>
+
+            <button>APPLY!!!</button>
+
+        </form>
+
+        <a href="#">x</a>
+
+    </div>
+
+
+    <div class="overlay"></div>
+
+
+
+    
+</body>
+</html>
